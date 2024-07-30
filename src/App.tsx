@@ -153,6 +153,7 @@ const App: React.FC = () => {
     return id;
   }, []);
 
+  
   const remoteChain = useMemo(() => new RemoteRunnable({
     url: `https://btasistentes.azurewebsites.net/${endpoint}`,
   }), [endpoint]);
